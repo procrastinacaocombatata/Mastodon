@@ -11,8 +11,6 @@ public class ValidatorMethods {
 
     @Test
     public void multiplicationOfZeroIntegersShouldReturnZero() {
-        // MyClass is tested
-
         // assert statements
         assertEquals("10 x 0 must be 0", 0, tester.multiply(10, 0));
         assertEquals("0 x 10 must be 0", 0, tester.multiply(0, 10));
@@ -36,6 +34,4 @@ public class ValidatorMethods {
         // use this method because float is not precise
         assertEquals("Conversion from celsius to fahrenheit failed", expected, actual, 0.001);
     }
-
-
 }
