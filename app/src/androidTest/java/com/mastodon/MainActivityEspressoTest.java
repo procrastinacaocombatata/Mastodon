@@ -19,19 +19,17 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 @RunWith(AndroidJUnit4.class)
 public class MainActivityEspressoTest {
 
-
     @Rule
-    public ActivityTestRule<MainActivity> mActivityRule =
-            new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
     public void ensureTextChangesWork() {
         // Type text and then press the button.
-        onView(withId(R.id.inputField)).perform(typeText("HELLO"), closeSoftKeyboard());
+        onView(withId(R.id.inputField)).perform(typeText("Meu Teste Lindo"), closeSoftKeyboard());
         onView(withId(R.id.changeText)).perform(click());
 
         // Check that the text was changed.
-        onView(withId(R.id.inputField)).check(matches(withText("Lalala")));
+        onView(withId(R.id.inputField)).check(matches(withText("Meu Teste Lindo")));
     }
 
     @Test
