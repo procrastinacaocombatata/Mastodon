@@ -1,13 +1,15 @@
 package com.mastodon;
 
 
+import com.mastodon.TestingandDebugging.UIandUnitActivity;
+
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
 
 public class ValidatorMethods {
-    private MainActivity tester = new MainActivity();
+    private UIandUnitActivity tester = new UIandUnitActivity();
 
     @Test
     public void multiplicationOfZeroIntegersShouldReturnZero() {

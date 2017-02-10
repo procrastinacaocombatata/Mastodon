@@ -3,6 +3,8 @@ package com.mastodon;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
+import com.mastodon.TestingandDebugging.UIandUnitActivity;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,10 +19,10 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 
 @RunWith(AndroidJUnit4.class)
-public class MainActivityEspressoTest {
+public class UIandUnitActivityEspressoTest {
 
     @Rule
-    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<UIandUnitActivity> mActivityRule = new ActivityTestRule<>(UIandUnitActivity.class);
 
     @Test
     public void ensureTextChangesWork() {
