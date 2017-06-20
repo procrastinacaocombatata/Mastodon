@@ -1,4 +1,4 @@
-package com.mastodon.TestingandDebugging;
+package com.mastodon.TestingAndDebugging;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import com.mastodon.R;
 // Debug and fix an application crash (uncaught exception)
 
 public class LogActivity extends AppCompatActivity {
-
 
     String word = null;
     char[] letters = word.toCharArray();

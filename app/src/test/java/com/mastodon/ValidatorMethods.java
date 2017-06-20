@@ -1,7 +1,7 @@
 package com.mastodon;
 
 
-import com.mastodon.TestingandDebugging.UIandUnitActivity;
+import com.mastodon.TestingAndDebugging.UIandUnitActivity;
 
 import org.junit.Test;
 

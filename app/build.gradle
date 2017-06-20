@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
 
     testOptions {
         unitTests.returnDefaultValues = true
     }
-
 
 
     defaultConfig {
@@ -39,24 +38,22 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
 
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2') {
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVersion") {
         // Necessary if your app targets Marshmallow (since Espresso
         // hasn't moved to Marshmallow yet)
         exclude group: 'com.android.support', module: 'support-annotations'
     }
-    androidTestCompile('com.android.support.test:runner:0.3') {
+    androidTestCompile("com.android.support.test:runner:$testRunnerVersion") {
         // Necessary if your app targets Marshmallow (since the test runner
         // hasn't moved to Marshmallow yet)
         exclude group: 'com.android.support', module: 'support-annotations'
     }
 
-
-
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
-    compile 'com.android.support:support-annotations:25.1.1'
-    compile 'com.jakewharton:butterknife:8.5.1'
-    testCompile 'junit:junit:4.12'
-    testCompile 'org.mockito:mockito-core:1.10.19'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+    compile "com.android.support.constraint:constraint-layout:$supportContrainstLayout"
+    compile "com.android.support:support-annotations:$supportLibraryVersion"
+    compile "com.jakewharton:butterknife:$butterVersion"
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.mockito:mockito-core:$mockitoVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterVersion"
 }

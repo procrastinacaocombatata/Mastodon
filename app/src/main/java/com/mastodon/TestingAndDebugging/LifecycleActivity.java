@@ -1,4 +1,4 @@
-package com.mastodon.TestingandDebugging;
+package com.mastodon.TestingAndDebugging;
 
 
 import android.os.Bundle;
@@ -23,9 +23,7 @@ public class LifecycleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_activity);
         Log.i(TAG,"On Create");
-
     }
-
 
     @Override
     protected void onStart() {

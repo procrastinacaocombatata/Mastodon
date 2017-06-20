@@ -3,7 +3,7 @@ package com.mastodon;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.mastodon.TestingandDebugging.UIandUnitActivity;
+import com.mastodon.TestingAndDebugging.UIandUnitActivity;
 
 import org.junit.Rule;
 import org.junit.Test;

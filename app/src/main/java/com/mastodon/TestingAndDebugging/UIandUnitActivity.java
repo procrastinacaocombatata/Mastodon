@@ -1,4 +1,4 @@
-package com.mastodon.TestingandDebugging;
+package com.mastodon.TestingAndDebugging;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
