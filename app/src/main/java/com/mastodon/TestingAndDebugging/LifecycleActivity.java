@@ -8,7 +8,6 @@ import android.util.Log;
 import com.mastodon.R;
 
 //Debug and fix an activity lifecycle issue
-
 //When app starts: onCreate onStart onResume
 //When home button clicked: onPause onStop
 //On reopening app: onRestart onStart onResume
@@ -21,7 +20,7 @@ public class LifecycleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.log_activity);
+        setContentView(R.layout.activity_log);
         Log.i(TAG,"On Create");
     }
 

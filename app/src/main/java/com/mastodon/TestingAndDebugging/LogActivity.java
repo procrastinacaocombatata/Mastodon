@@ -22,7 +22,7 @@ public class LogActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.log_activity);
+        setContentView(R.layout.activity_log);
 
         Log.e(TAG, "This is error");
         Log.w(TAG, "This is warning");

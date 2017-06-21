@@ -14,7 +14,6 @@ public class MyApplication extends Application {
         instance = this;
         SharedPreferencesHelper.getInstance().setInstallationTime(System.currentTimeMillis());
     }
-
     public static MyApplication getInstance() {
         return instance;
     }

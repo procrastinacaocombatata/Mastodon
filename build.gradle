@@ -30,7 +30,8 @@ allprojects {
         supportContrainstLayout = '1.0.2'
         playServicesVersion = '10.2.4'
 
-        butterVersion = '8.5.1'
+        AAVersion = '4.3.1'
+        butterVersion = '8.6.0'
     }
 }
 

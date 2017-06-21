@@ -8,7 +8,6 @@ android {
         unitTests.returnDefaultValues = true
     }
 
-
     defaultConfig {
         applicationId "com.mastodon"
         minSdkVersion 22
@@ -36,7 +35,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.mockito:mockito-core:$mockitoVersion"
 
     androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVersion") {
         // Necessary if your app targets Marshmallow (since Espresso
@@ -52,8 +52,13 @@ dependencies {
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"
     compile "com.android.support.constraint:constraint-layout:$supportContrainstLayout"
     compile "com.android.support:support-annotations:$supportLibraryVersion"
+    compile "com.android.support:support-annotations:$supportLibraryVersion"
+
     compile "com.jakewharton:butterknife:$butterVersion"
-    testCompile "junit:junit:$junitVersion"
-    testCompile "org.mockito:mockito-core:$mockitoVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterVersion"
+
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+
+    compile 'jp.wasabeef:blurry:2.1.1'
 }
