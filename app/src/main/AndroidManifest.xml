@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestingandDebugging.LogActivity"></activity>
+        <activity android:name=".TestingandDebugging.LogActivity" />
+        <activity android:name=".TestingandDebugging.BindingDataActivity"></activity>
     </application>
+
 </manifest>
